@@ -1,0 +1,19 @@
+@use "../variables"
+
+.floating-nav
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-evenly
+  width: 60%
+  margin: 10px auto
+
+
+  span
+    font-size: 1.8em
+    font-family: variables.$serif
+    cursor: pointer
+    text-decoration-line: none
+    transition-property: text-decoration
+
+    &:hover
+      text-decoration-line: underline
