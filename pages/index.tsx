@@ -16,6 +16,7 @@ import {
     faEnvelope,
     faMapLocationDot
 } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 
 const options = {
@@ -41,12 +42,15 @@ export async function getStaticProps() {
     }
 
     return {
-        props:  content
+        props: content
     }
 }
 
-const Home: NextPage = ({bio}) => (
+const Home: NextPage = ({bio}: any) => (
     <div className={styles["main-page"]}>
+        <Head>
+            <title>Samuel Lihn | Home</title>
+        </Head>
         <div className={styles["title-screen"]}>
             <div className={styles.title}>
                 <h1>Samuel Lihn</h1>
@@ -64,22 +68,27 @@ const Home: NextPage = ({bio}) => (
                         <MDXRemote {...bio}/>
                     </div>
                     <div className={styles.accounts}>
-                        <span><FontAwesomeIcon icon={faGithubSquare}/>samuellihnk</span>
-                        <span><FontAwesomeIcon icon={faEnvelope}/>samuellihn@gmail.com</span>
+                        <Link href={"https://github.com/samuellihn"}>
+                            <span><FontAwesomeIcon icon={faGithubSquare}/>samuellihn</span>
+                        </Link>
+                        <Link href={"mailto: samuellihn@gmail.com"}>
+                            <span><FontAwesomeIcon icon={faEnvelope}/>samuellihn@gmail.com</span>
+                        </Link>
+
                         <span><FontAwesomeIcon icon={faMapLocationDot}/>Piscataway, NJ</span>
                     </div>
                 </div>
             </div>
         </section>
-        <section id={"Projects"} className={`${styles.section} ${styles.projects}`}>
-            <div className={styles["section-inner"]}>
+        {/*<section id={"Projects"} className={`${styles.section} ${styles.projects}`}>*/}
+        {/*    <div className={styles["section-inner"]}>*/}
 
-                <h1>Projects</h1>
+        {/*        <h1>Projects</h1>*/}
 
 
-            </div>
+        {/*    </div>*/}
 
-        </section>
+        {/*</section>*/}
     </div>
 );
 
