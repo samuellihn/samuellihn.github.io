@@ -28,9 +28,17 @@
 
     h2
       font-family: variables.$sans-serif
-      margin: 0 10px 30px 10px
+      margin: 0 15px 30px 15px
       font-weight: 500
       font-size: 2.3em
+      display: flex
+      flex-flow: row wrap
+      justify-content: center
+      column-gap: 0.25em
+      span
+        text-wrap: none
+      //display: flex
+
 
 
 .section
@@ -45,10 +53,12 @@
     h1
       margin-top: 0
       font-family: variables.$serif
-      font-size: 2.5em
+      font-size: 3em
 
 .projects
   background-color: color.scale(variables.$beige, $lightness: 30%)
+.posts
+  background-color: color.scale(variables.$beige, $lightness: 10%)
 
 
 .about
@@ -91,4 +101,32 @@
           padding-right: 10px
           font-size: 1.3em
           width: 1em
+
+
+@media screen and (max-width: 1400px)
+  .section
+    &-inner
+      width: min(80%, 80em)
+
+@media screen and (max-width: 1200px)
+  .section
+    &-inner
+      width: min(90%, 80em)
+
+@media screen and (max-width: 600px)
+  .title-screen
+    .title
+      hr
+        width: 75%
+  .section
+    &-inner
+      padding: 3em 0
+      h1
+        margin-bottom: 0.5em
+
+  .about
+    &-container
+      flex-direction: column-reverse
+      gap: 1.3em
+
 

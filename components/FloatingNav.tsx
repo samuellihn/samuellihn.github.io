@@ -8,9 +8,9 @@ const FloatingNav: () => JSX.Element = () => {
             <Link href={"#about"}>
                 <span>About</span>
             </Link>
-            {/*<Link href={"#Projects"}>*/}
-            {/*    <span>Projects</span>*/}
-            {/*</Link>*/}
+            <Link href={"#Projects"}>
+                <span>Projects</span>
+            </Link>
             {/*<Link href={"#Posts"}>*/}
             {/*    <span>Posts</span>*/}
             {/*</Link>*/}

@@ -1,0 +1,31 @@
+@use "../variables"
+@use "sass:color"
+
+@mixin markdown
+  h1, h2, h3, h4, h5, h6
+    font-family: variables.$serif
+
+  @for  $i from 1 through 6
+    h#{$i}
+      font-size: #{2.7 - $i * 0.2}em
+      margin: #{0.88 - $i * 0.08}em 0  #{0.44 - $i * 0.04}em 0
+  p
+    color: variables.$space-cadet
+    font-family: variables.$sans-serif
+    font-weight: 400
+    font-size: 1.3em
+    line-height: 1.4
+    margin: 0.9em 0
+
+  a
+    color: color.scale(variables.$independence, $lightness: 20%)
+    text-decoration: underline
+
+    &:active
+      color: color.scale(variables.$independence, $lightness: 60%)
+
+    &:hover
+      color: color.scale(variables.$independence, $lightness: 40%)
+
+  &:visited
+    color: variables.$independence

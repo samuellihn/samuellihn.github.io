@@ -1,20 +1,22 @@
 @use "../variables"
 
-.project-card
+.post-card
   display: flex
-  height: 15em
+  flex-direction: row-reverse
+  height: 12.5em
   img
     pointer-events: none
     width: 20em
   overflow: hidden
   border-radius: 8px
-  background-color: lighten(variables.$laurel-green, 15%)
+  background-color: lighten(variables.$tan, 15%)
   box-shadow: 0 0 10px -5px black
   &:hover
     h1
       text-decoration: underline lighten(variables.$space-cadet, 50%)
     box-shadow: 0 0 10px -3.5px black
   &-inner
+    flex-grow: 1
     pointer-events: none
     display: flex
     flex-direction: column
@@ -44,13 +46,24 @@
       margin: 10px 0 0 0
 
 
-
-
-
-
-.project-list
+.post-list
   display: flex
   flex-direction: column
   padding: 20px 0
   flex-wrap: nowrap
   gap: 2em
+@media screen and (max-width: 1000px)
+  .post-card
+    height: 14em
+@media screen and (max-width: 1000px)
+  .post-card
+    height: 16em
+
+
+
+@media screen and (max-width: 600px)
+  .post-card
+    flex-direction: column
+    img
+      width:  100%
+    height: fit-content

@@ -17,6 +17,9 @@ import {
     faMapLocationDot
 } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
+import ProjectView from "../components/ProjectView";
+import {getPosts, getProjects, Post, Project} from "../lib/contentFetcher";
+import PostView from '../components/PostView'
 
 
 const options = {
@@ -28,25 +31,31 @@ const options = {
 
 type HomeContent = {
     bio: MDXRemoteSerializeResult
+    projects: Project[]
+    posts: Post[]
 
 }
 
 
 export async function getStaticProps() {
-    const contentPath: string = path.join(process.cwd(), "website/home")
+    const contentPath: string = path.join(process.cwd(), "public", "website", "home")
     const mdBio = await fs.readFile(path.join(contentPath, "bio.mdx"))
     const bio = await serialize(mdBio.toString(), options)
+    const projects = await getProjects()
+    const posts = await getPosts()
 
     let content: HomeContent = {
         bio,
+        projects,
+        posts
     }
-
     return {
         props: content
     }
 }
 
-const Home: NextPage = ({bio}: any) => (
+// @ts-ignore
+const Home: NextPage = ({bio, projects, posts}: HomeContent) => (
     <div className={styles["main-page"]}>
         <Head>
             <title>Samuel Lihn | Home</title>
@@ -54,7 +63,11 @@ const Home: NextPage = ({bio}: any) => (
         <div className={styles["title-screen"]}>
             <div className={styles.title}>
                 <h1>Samuel Lihn</h1>
-                <h2>Student, Application Developer, Robotics Enthusiast</h2>
+                <h2>
+                    <span>Student,</span>
+                    <span>Robotics Enthusiast,</span>
+                    <span>Application Developer</span>
+                </h2>
                 <hr/>
                 <FloatingNav/>
             </div>
@@ -71,7 +84,7 @@ const Home: NextPage = ({bio}: any) => (
                         <Link href={"https://github.com/samuellihn"}>
                             <span><FontAwesomeIcon icon={faGithubSquare}/>samuellihn</span>
                         </Link>
-                        <Link href={"mailto: samuellihn@gmail.com"}>
+                        <Link href={"mailto: samuellihn@gmail.com"} passHref={true}>
                             <span><FontAwesomeIcon icon={faEnvelope}/>samuellihn@gmail.com</span>
                         </Link>
 
@@ -80,14 +93,18 @@ const Home: NextPage = ({bio}: any) => (
                 </div>
             </div>
         </section>
-        {/*<section id={"Projects"} className={`${styles.section} ${styles.projects}`}>*/}
+        <section id={"Projects"} className={`${styles.section} ${styles.projects}`}>
+            <div className={styles["section-inner"]}>
+                <h1>Projects</h1>
+                <ProjectView projects={projects}/>
+            </div>
+
+        </section>
+        {/*<section id={"Posts"} className={`${styles.section} ${styles.posts}`}>*/}
         {/*    <div className={styles["section-inner"]}>*/}
-
-        {/*        <h1>Projects</h1>*/}
-
-
+        {/*        <h1>Posts</h1>*/}
+        {/*        <PostView posts={posts}/>*/}
         {/*    </div>*/}
-
         {/*</section>*/}
     </div>
 );
