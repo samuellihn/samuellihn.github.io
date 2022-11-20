@@ -1,0 +1,87 @@
+{
+  "main": {
+    "id": "2c13c8fec7015975",
+    "type": "split",
+    "children": [
+      {
+        "id": "2f4efe89ed1b86d4",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Beginning of Civil Rights Movement.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "682776178987006e",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "3af7b47110d2e648",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "e852c770eeb7b381",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "7acc187b3740aff6",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "03293c8b227cbb0a",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Beginning of Civil Rights Movement.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "2f4efe89ed1b86d4",
+  "lastOpenFiles": [
+    "Beginning of Civil Rights Movement.md",
+    "Postwar Era.md",
+    "Successes and Setbacks.md",
+    "Economic Prosperity.md",
+    "Movement Surges Forward.md",
+    "AP-Physics/Dynamics-Unit-2/Forces.md",
+    "AP-Calculus-BC/Unit-4/Positon, Velocity, Acceleration.md",
+    "AP-Chem/Unit-4/Types-of-chemical-reactions.md",
+    "Exponential and Logistic Models.md",
+    "Derivation of Exponential Growth.md"
+  ]
+}

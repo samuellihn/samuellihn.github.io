@@ -1,0 +1,44 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:AP-Physics",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:AP-Calculus-BC",
+      "color": {
+        "a": 1,
+        "rgb": 14069084
+      }
+    },
+    {
+      "query": "path:AP-Chem",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.55898876404494,
+  "lineSizeMultiplier": 3.06385767790262,
+  "collapse-forces": false,
+  "centerStrength": 0.608614232209738,
+  "repelStrength": 12.9213483146067,
+  "linkStrength": 1,
+  "linkDistance": 327,
+  "scale": 0.45050811767578103,
+  "close": false
+}

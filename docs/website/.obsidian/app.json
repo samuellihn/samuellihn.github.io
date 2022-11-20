@@ -1,0 +1,21 @@
+{
+  "vimMode": true,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "showFrontmatter": false,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "legacyEditor": false,
+  "autoPairBrackets": false,
+  "autoPairMarkdown": false,
+  "spellcheckDictionary": [
+    "deserialization",
+    "SignalR",
+    "WebSocket",
+    "Arha"
+  ]
+}

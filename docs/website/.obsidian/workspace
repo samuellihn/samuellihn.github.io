@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "2c13c8fec7015975",
+    "type": "split",
+    "children": [
+      {
+        "id": "a24057fb9934ee8a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "projects/nasaadc.mdx",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c34cdf8bb71e8118",
+    "type": "split",
+    "children": [
+      {
+        "id": "b335752bc3f1bef6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "34484b4c1ed356fe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "2259230c58e9366d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "section:()",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "byModifiedTime"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 310
+  },
+  "right": {
+    "id": "16ce035686d41a95",
+    "type": "split",
+    "children": [
+      {
+        "id": "56564f273e4066f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "35501bd9741a3b16",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "projects/nasaadc.mdx",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 213,
+    "collapsed": true
+  },
+  "active": "a24057fb9934ee8a",
+  "lastOpenFiles": [
+    "projects/nasaadc.mdx",
+    "Pasted image 20220329122006.png",
+    "projects/magrover.mdx",
+    "projects/localpin.mdx",
+    "projects/focusmath.mdx",
+    "posts/youtube-without-recommendations.md",
+    "home/bio.mdx",
+    "projects/localpin.mdx.md",
+    "Untitled.md",
+    "projects/MagRover.mdx.md"
+  ]
+}

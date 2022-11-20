@@ -1,0 +1,21 @@
+---
+title: LocalPin
+date: 2021-11-01
+status: Completed
+thumbnail: 
+images: 
+description: A location-first social media app that connects local communities
+---
+
+LocalPin is a location-first social media app that connects local communities through what they all have in common—places. Users can create pins on a map to inform, warn, or entertain other members of the community. Users can see all the pins around their current location and pins will appear in real time, connecting users in the spur of the moment. 
+
+LocalPin pins can inform community members for a lost item, warn community members of hazards, or simply inform users of current events in the community. Users can also place blog posts on the map, informing and entertaining members of the community. Users can also comment on other posts and vote to resolve them. 
+
+Integrating the Google Maps API into such a unique software stack was a challenge and required a lot of Typescript “glue” code. This was my first experience with Typescript, which would become one of my favorite languages. Overall, I used this app as an opportunity to see the entire app development lifecycle from beginning to end.
+
+This app was submitted to the 2021-22 Congressional App Challenge. Watch the video [here](https://www.youtube.com/watch?v=s3fCew-yv_M)
+
+# Technical Details
+The app is built using web technologies with ASP.NET Core Blazor, a WebAssembly-based SPA framework that allows C# code to run in the browser. Real-time communication uses SignalR, as it's integrated well into Blazor and much simpler than raw WebSockets. JS/TypeScript interop allows the C# components to communicate with the Google Maps JavaScript API. 
+
+The backend is built with ASP.NET Core backed by a PostgreSQL database for persistent storage. Using C# allowed me to use the same models for both frontend and backend, and serialization and deserialization was seamless. User actions are simple HTTP POST endpoints while real-time notifications are transferred with a persistent SignalR (WebSocket) connection. Authentication is handled with the `Samuellihn.UserManagement` library reused from a previous project.
