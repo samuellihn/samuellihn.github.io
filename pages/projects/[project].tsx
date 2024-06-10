@@ -9,6 +9,7 @@ import {
 import {DateTime} from "luxon";
 import BlurImage from "../../components/BlurImage";
 import Head from "next/head";
+import {useEffect} from "react";
 
 export async function getStaticPaths() {
     let projects: Project[] = await getProjects()
@@ -33,6 +34,9 @@ export async function getStaticProps({params}: { params: { project: string } }) 
 }
 
 const ProjectPage = ({project}: { project: Project }) => {
+    useEffect(() => {
+        window.addEventListener("popstate", () => location.assign('/'))
+    }, []);
     return (
         <div className={styles["page"]}>
             <Head>
