@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-image-export-optimizer",
+    "build": "next build && next-image-export-optimizer && cp -r out/ docs/",
     "export": "next export -o docs/",
     "start": "next start",
     "lint": "next lint"
