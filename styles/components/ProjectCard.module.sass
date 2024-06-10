@@ -14,6 +14,7 @@
     .image-layer
       .right-pad
         min-width: 0
+        width: 0
 
   .image-layer
     grid-area: 1 / 1 / 2 / 2
@@ -23,11 +24,22 @@
     display: flex
     overflow: hidden
     flex-direction: row-reverse
+    .image
+      height: 100%
+      min-width: max-content
+      width: max-content
+      > img
+        position: relative !important
+        object-fit: cover
     .right-pad
-      transition: min-width $transition
+      transition: min-width $transition, width $transition
       background-size: cover
       min-width: $arrow-width
       width: $arrow-width
+      > img
+        position: relative !important
+        width: auto !important
+        object-fit: cover
 
 
 

@@ -16,7 +16,6 @@ const FloatingNav: (props: {
                 {props.entries.map(e => (
                     <li key={e.label}>
                         <Link href={e.href} passHref>
-                            <a href={e.href}>
                                 <span
                                     className={e.label == props.selected ? `${styles["nav-entry"]} ${styles["selected"]}` : styles["nav-entry"]}>
                                     <span className={styles["bullet"]}>
@@ -26,7 +25,6 @@ const FloatingNav: (props: {
                                         {e.label}
                                     </span>
                                 </span>
-                            </a>
                         </Link>
                     </li>
                 ))}

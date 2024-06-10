@@ -48,7 +48,7 @@ export type Project = {
     description: string
     content: MDXRemoteSerializeResult
     date?: string
-    thumbnail?: string
+    thumbnail: string
     images?: string[]
 }
 
