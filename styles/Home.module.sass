@@ -1,132 +1,222 @@
 @use "variables"
 @use "sass:color"
 
+$sidebar-trans: 0.5s ease
+$sidebar-trans-long: 1s ease
+
 .main-page
-  overflow-x: hidden
+  //overflow-x: hidden
+  display: flex
+
+.main-flex
+  display: flex
+  column-gap: 15ex
+
+
+  .About
+    min-width: 45%
+    .title-bar
+      h1
+        font-size: 6em
+    .dynamic-panel-1
+      height: 0
+
+  .Experience
+    min-width: 33%
+
+    .title-bar
+      h1
+        font-size: 4em
+    .dynamic-panel-1
+      height: calc(100vh - 25em)
+      margin-bottom: 1.8em
+
+  .Projects
+    min-width: 33%
+
+    .title-bar
+      h1
+        font-size: 4em
+    .dynamic-panel-1
+      height: 0
+      margin-bottom: 0
+
+  .left-pane
+    display: flex
+    top: 0
+    position: sticky
+    color: variables.$text-main
+    height: 100vh
+    justify-content: left
+    padding-left: 10em
+    transition: min-width $sidebar-trans
+    align-items: center
+
+
+    .title-bar
+
+      h1
+        font-family: variables.$serif
+        margin: 0 0 -0.15em 0
+        font-weight: 600
+        transition: font-size $sidebar-trans
+
+
+      .social-container
+        display: flex
+        align-items: start
+        justify-content: left
+        row-gap: 0.8em
+        column-gap: 0.8em
+
+
+      .dynamic-panel-1
+        font-family: variables.$sans-serif
+        overflow: hidden
+        transition: height $sidebar-trans-long, margin-bottom $sidebar-trans-long
+
+        .education
+          display: flex
+          flex-direction: column
+          row-gap: 1em
+
+        > h1
+          font-family: variables.$sans-serif
+          font-size: 2.6em
+          font-weight: 200
+          margin-bottom: 0.4em
+          text-transform: uppercase
+
+  .content
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    padding-right: 10em
+
 
 .title-screen
   height: 100vh
-  width: 100vw
   display: flex
-  justify-content: center
+  justify-content: left
   align-items: center
-  background-color: variables.$independence
-  text-align: center
+  background-color: variables.$background-main
+  font-family: variables.$sans-serif
+  .blurb
+    flex-direction: column
+    font-size: 1.5em
+    line-height: 1.25
 
-  .title
-    color: variables.$laurel-green
+.experience
+  > h1
+    font-family: variables.$sans-serif
+    font-size: 3em
+    font-weight: 300
+    text-transform: uppercase
 
-    hr
-      width: 60%
-      margin: 10px auto
-      border-top: 1px solid variables.$laurel-green
-
-    h1
-      font-family: variables.$serif
-      font-size: 6em
-      margin: 15px 5px
-
-    h2
-      font-family: variables.$sans-serif
-      margin: 0 15px 30px 15px
-      font-weight: 500
-      font-size: 2.3em
-      display: flex
-      flex-flow: row wrap
-      justify-content: center
-      column-gap: 0.25em
-      span
-        text-wrap: none
-      //display: flex
-
-
-
-.section
-  color: variables.$space-cadet
-
-  &-inner
-
-    padding: 4em 0
-    width: min(70%, 80em)
-    margin: 0 auto
-
-    h1
-      margin-top: 0
-      font-family: variables.$serif
-      font-size: 3em
+  background-color: variables.$background-main
 
 .projects
-  background-color: color.scale(variables.$beige, $lightness: 30%)
-.posts
-  background-color: color.scale(variables.$beige, $lightness: 10%)
-
-
-.about
-  background-color: color.scale(variables.$beige, $lightness: 50%)
+  > h1
+    font-family: variables.$sans-serif
+    font-size: 3em
+    font-weight: 300
+    text-transform: uppercase
 
   &-container
-
     display: flex
-    font-family: variables.$sans-serif
-    gap: 3em
-
-    font-size: 1.4em
-
-    .summary
-      flex-basis: 70%
-      font-weight: 400
-      line-height: 1.3
-
-      p
-        margin: 0 0
-
-    .accounts
-      font-weight: 600
-
-      flex-basis: 30%
-      flex-direction: column
-      display: flex
-      justify-content: center
-      align-items: left
-
-      span
-        cursor: pointer
-        display: flex
-        flex-wrap: nowrap
-        align-items: center
-
-        padding: 10px 0
-
-        svg
-          padding-right: 10px
-          font-size: 1.3em
-          width: 1em
+    flex-direction: column
+    gap: 1.6em
 
 
-@media screen and (max-width: 1400px)
-  .section
-    &-inner
-      width: min(80%, 80em)
-
-@media screen and (max-width: 1200px)
-  .section
-    &-inner
-      width: min(90%, 80em)
-
-@media screen and (max-width: 600px)
-  .title-screen
-    .title
-      hr
-        width: 75%
-  .section
-    &-inner
-      padding: 3em 0
-      h1
-        margin-bottom: 0.5em
-
-  .about
-    &-container
-      flex-direction: column-reverse
-      gap: 1.3em
 
 
+
+//.section
+//  color: variables.$space-cadet
+//
+//  &-inner
+//
+//    padding: 4em 0
+//    width: min(70%, 80em)
+//    margin: 0 auto
+//
+//    h1
+//      margin-top: 0
+//      font-family: variables.$serif
+//      font-size: 3em
+//
+//.projects
+//  background-color: color.scale(variables.$beige, $lightness: 30%)
+//.posts
+//  background-color: color.scale(variables.$beige, $lightness: 10%)
+//
+//
+//.about
+//  background-color: color.scale(variables.$beige, $lightness: 50%)
+//
+//  &-container
+//
+//    display: flex
+//    font-family: variables.$sans-serif
+//    gap: 3em
+//
+//    font-size: 1.4em
+//
+//    .summary
+//      flex-basis: 70%
+//      font-weight: 400
+//      line-height: 1.3
+//
+//      p
+//        margin: 0 0
+//
+//    .accounts
+//      font-weight: 600
+//
+//      flex-basis: 30%
+//      flex-direction: column
+//      display: flex
+//      justify-content: center
+//      align-items: left
+//
+//      span
+//        cursor: pointer
+//        display: flex
+//        flex-wrap: nowrap
+//        align-items: center
+//
+//        padding: 10px 0
+//
+//        svg
+//          padding-right: 10px
+//          font-size: 1.3em
+//          width: 1em
+//
+//
+//@media screen and (max-width: 1400px)
+//  .section
+//    &-inner
+//      width: min(80%, 80em)
+//
+//@media screen and (max-width: 1200px)
+//  .section
+//    &-inner
+//      width: min(90%, 80em)
+//
+//@media screen and (max-width: 600px)
+//  .title-screen
+//    .title
+//      hr
+//        width: 75%
+//  .section
+//    &-inner
+//      padding: 3em 0
+//      h1
+//        margin-bottom: 0.5em
+//
+//  .about
+//    &-container
+//      flex-direction: column-reverse
+//      gap: 1.3em
+//
+//

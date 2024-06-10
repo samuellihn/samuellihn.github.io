@@ -1,35 +1,51 @@
 @use "../variables"
 
-.floating-nav
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-evenly
-  width: 60%
-  margin: 10px auto
+.nav
+  font-family: variables.$sans-serif
+  text-transform: uppercase
+  font-size: 1.2em
+  ul
+    list-style-type: none
+    padding-left: 0
+
+  .nav-entry
+    display: inline-flex
+    align-items: center
+    column-gap: 0.8em
+    overflow: hidden
 
 
-  span
-    font-size: 1.8em
-    font-family: variables.$serif
-    cursor: pointer
-    text-decoration-line: none
-    transition-property: text-decoration
+    .bullet
+      font-size: 1.5em
+      font-weight: 250
+      letter-spacing: -0.31em
+      transform: translateY(-5%)
+      transition: margin-left 0.3s ease
+      margin-left: -1.49ex
+
+    .label
+      font-weight: 400
+      letter-spacing: 0.05ex
 
     &:hover
-      text-decoration-line: underline
+      .bullet
+        font-weight: 500
+        margin-left: 0.1ex
+
+      .label
+        font-weight: 700
+
+  .selected
+
+    .bullet
+      font-weight: 500
+      margin-left: -0.38ex
+
+    .label
+      font-weight: 700
 
 
-@media screen and (max-width: 1000px)
-  .floating-nav
-    width: 80%
 
-@media screen and (max-width: 800px)
-  .floating-nav
-    width: 100%
 
-@media screen and (max-width: 600px)
-  .floating-nav
-    flex-direction: column
-    row-gap: 0.8em
-    padding-top: 0.4em
-    width: 100%
+
+

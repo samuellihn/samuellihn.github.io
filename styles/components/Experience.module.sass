@@ -1,0 +1,53 @@
+@use "../variables"
+
+.entry
+  font-family: variables.$sans-serif
+  display: flex
+  flex-direction: row
+
+  .side
+    flex-basis: 20%
+    h3
+      margin: 0
+      text-transform: uppercase
+      font-weight: 400
+      width: 10.5ex
+      letter-spacing: 0.05ex
+
+  .main
+    flex-basis: 80%
+    h1
+      margin: 0 0 0.2em 0
+      font-size: 1.4em
+      font-weight: 800
+
+    h2
+      margin: 0
+      font-size: 1.4em
+      font-weight: 600
+    ul, ol
+      padding-left: 0.5em
+
+    li, p
+      font-size: 1.1em
+      font-weight: 400
+      letter-spacing: 0.05ex
+
+    p
+      margin: 0.5em 0 0.5em 0
+
+    li
+      padding-left: 1.2em
+      &::marker
+        content: '>>'
+        letter-spacing: -0.35em
+        font-size: 1.2em
+        font-weight: 400
+
+
+
+
+
+
+
+

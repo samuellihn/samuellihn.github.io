@@ -8,7 +8,7 @@ const BlurImage: (props: { src: string, maxHeight?: string, alt? : string }) => 
                  props.maxHeight ? {
                          maxHeight: props.maxHeight,
                          aspectRatio: "unset",
-                         backgroundImage: `url(${props.src})`
+                         backgroundImage: `url(${props.src})`,
                      } :
                      {backgroundImage: `url(${props.src})`}}>
 

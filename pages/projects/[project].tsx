@@ -50,20 +50,20 @@ const ProjectPage = ({project}: { project: Project }) => {
                     <div className={styles["side"]}>
                         <BlurImage src={project.thumbnail ?? ""} maxHeight={"60ex"}/>
                         <div className={styles["sidebar-info"]}>
-                            <div>
-                                <span>
-                                    <FontAwesomeIcon icon={faClock}/>
-                                    <h4>Status</h4>
-                                </span>
-                                <h5>{project.status}</h5>
-                            </div>
-                            <div>
-                                <span>
-                                    <FontAwesomeIcon icon={faCalendar}/>
-                                    <h4>Started</h4>
-                                </span>
-                                <h5>{DateTime.fromISO(project.date)?.toFormat("DDD")}</h5>
-                            </div>
+                            {/*<div>*/}
+                            {/*    <span>*/}
+                            {/*        <FontAwesomeIcon icon={faClock}/>*/}
+                            {/*        <h4>Status</h4>*/}
+                            {/*    </span>*/}
+                            {/*    <h5>{project.status}</h5>*/}
+                            {/*</div>*/}
+                            {/*<div>*/}
+                            {/*    <span>*/}
+                            {/*        <FontAwesomeIcon icon={faCalendar}/>*/}
+                            {/*        <h4>Started</h4>*/}
+                            {/*    </span>*/}
+                            {/*    <h5>{DateTime.fromISO(project.date)?.toFormat("DDD")}</h5>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,90 @@
+@use "../variables"
+
+.project-card
+  display: grid
+  height: 13em
+  overflow: hidden
+  grid-template-rows: 100%
+  grid-template-columns: 100%
+  border: 2px solid black
+  $arrow-width: 4em
+  $transition: 0.5s ease
+
+  &:hover
+    .image-layer
+      .right-pad
+        min-width: 0
+
+  .image-layer
+    grid-area: 1 / 1 / 2 / 2
+    width: 100%
+    max-width: 100%
+    z-index: 1
+    display: flex
+    overflow: hidden
+    flex-direction: row-reverse
+    .right-pad
+      transition: min-width $transition
+      background-size: cover
+      min-width: $arrow-width
+      width: $arrow-width
+
+
+
+  &-inner
+
+    &:hover
+      .text-container
+        width: 0
+
+    grid-area: 1 / 1 / 2 / 2
+    display: flex
+    flex-direction: row
+    z-index: 2
+    width: 100%
+
+    .text-container
+      display: flex
+      height: 100%
+      width: calc(100% - $arrow-width)
+      transition: width $transition
+      overflow: hidden
+
+
+      .text
+        padding: 25px 0 25px 30px
+        width: 45ex
+        min-width: 38ex
+        color: variables.$text-light
+        background-color: variables.$background-translucent-dark
+
+
+        h1
+          margin: 0 0
+          font-family: variables.$sans-serif
+          font-weight: 800
+          font-size: 1.4em
+
+        p
+          font-weight: 400
+          font-family: variables.$sans-serif
+          font-size: 1.1em
+          margin: 10px 0 0 0
+      .window
+        background: linear-gradient(90deg, variables.$background-translucent-dark 0%, #ffffff00 35%, #ffffff00 100%)
+        flex-grow: 1
+    .arrow
+      background-color: black
+      width: $arrow-width
+      display: flex
+      align-items: center
+      justify-content: center
+
+      span
+        font-family: variables.$sans-serif
+        color: variables.$text-light
+        font-size: 3.4em
+        font-weight: 400
+        letter-spacing: -0.35em
+        transform: translateY(-5%)
+        margin-left: -0.3em
