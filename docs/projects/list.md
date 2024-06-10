@@ -1,8 +1,0 @@
-magrover
-nasaadc
-ftc2020-robot
-mti2019-robot
-localpin
-ftc2018-robot
-ftc2018-linkage
-focusmath
