@@ -1,21 +1,29 @@
-# Electromechanical & Controls Engineer
+# Systems (Integration and Test) Engineering Intern 
+## Fulfil Solutions
+### Jun 2024 - Aug 2024
 
-## Blue Jay Racing - Baja SAE at Johns Hopkins University
-
+- Performed bench testing and validation of robotic systems for automated grocery delivery fulfillment through rigorous stress testing to uncover new hardware- and software-related operational issues
+- Conducted initial bring-up, calibration, and troubleshooting to prepare machines for production use
+- Performed root cause analysis of machinery failures through in-depth debugging of hardware and software systems and gathered data with various experiments to verify root causes
+- Made recommendations for hardware subsystem revisions to reduce need for human intervention during operation and streamline hardware deployment for future sites
+# Controls & Electromechanical Engineer
+## Blue Jay Racing - Baja SAE at Johns Hopkins
 ### Aug 2023 - present
 
-- Developing 3D dynamics simulation software in Unity to visualize on-car sensor and LIDAR data to analyze suspension performance and load cases during offroad racing. 
-- Perform on-car wiring harness and sensor integration tasks for data acquisition (DAQ) subteam, and fleet maintenance and machining tasks for suspension and drivetrain subteams to prepare car for competition.
-- Designed and fabricated water resistant enclosure for brake light power source on JH20XT race car
-# Operations Intern
+- Designed rack and pinion steering subsystem for JH21XT race car using Solidworks
+- Performed structural analysis of rack and pinion in maximum load cases with ANSYS Mechanical
+- Integrate data acquisition PCBs and electronic components with vehicle chassis by designing and arranging custom ingress-protected enclosures, wiring harnesses, and mounting hardware
+- Develop procedures for bench testing, on-vehicle validation, and calibration of data acquisition system electronics and suggest data- and process-driven improvements to various vehicle subsystems
+    
+
+# Strategic Advisor
 ## Pava Center for Entrepreneurship, Johns Hopkins University
-### Aug 2023 - present
+### Aug 2024 - present
+#### Operations Intern (Aug 2023 - May 2024)
 
-- Starting entrepreneurship club to connect undergraduate innovators around campus
-- Planned Kinetic Art workshop at JHU Makerspace to introduce students to basic engineering concepts
-- Designed vinyl wall decals for phone booths in building
-- Support in-person Pava Center events by assisting with setup and teardown and catering logistics
-
+- Facilitate weekly Mastermind Sessions to review venture development basics with idea-stage startup founders
+- Conduct consultations to assist founders with business plan and product development and pinpoint needs of early-stage ventures
+- Founding undergraduate entrepreneurship club to connect student founders on campus
 # Research Intern
 ## UCLA Earth, Planetary, and Space Sciences
 ### Jun 2020 - Aug 2023

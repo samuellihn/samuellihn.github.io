@@ -3,6 +3,7 @@
 
 $sidebar-trans: 0.5s ease
 $sidebar-trans-long: 1s ease
+$page-margin: 10em
 
 .main-page
   //overflow-x: hidden
@@ -48,7 +49,7 @@ $sidebar-trans-long: 1s ease
     color: variables.$text-main
     height: 100vh
     justify-content: left
-    padding-left: 10em
+    padding-left: $page-margin
     transition: min-width $sidebar-trans
     align-items: center
 
@@ -91,7 +92,7 @@ $sidebar-trans-long: 1s ease
     display: flex
     flex-direction: column
     flex-grow: 1
-    padding-right: 10em
+    padding-right: $page-margin
 
 
 .title-screen
@@ -107,6 +108,7 @@ $sidebar-trans-long: 1s ease
     line-height: 1.25
 
 .experience
+  min-height: 90vh
   > h1
     font-family: variables.$sans-serif
     font-size: 3em
@@ -128,95 +130,72 @@ $sidebar-trans-long: 1s ease
     gap: 1.6em
 
 
+@media screen and (max-width: 1400px)
+  //.section
+  //  &-inner
+  //    width: min(80%, 80em)
+
+@media screen and (max-width: 1200px)
+  $coeff: 0.8
+  .main-flex
+    .left-pane
+      padding-left: $page-margin * $coeff
+    .content
+      padding-right: $page-margin * $coeff
+    column-gap: 12ex
+
+@media screen and (max-width: 1100px)
+  $coeff: 0.55
+  .main-flex
+    .left-pane
+      padding-left: $page-margin * $coeff
+    .content
+      padding-right: $page-margin * $coeff
+    column-gap: 9ex
 
 
+@media screen and (max-width: 1000px)
+  $coeff: 0.4
+  .main-flex
+    .left-pane
+      padding-left: $page-margin * $coeff
+    .content
+      padding-right: $page-margin * $coeff
+    column-gap: 5ex
 
-//.section
-//  color: variables.$space-cadet
-//
-//  &-inner
-//
-//    padding: 4em 0
-//    width: min(70%, 80em)
-//    margin: 0 auto
-//
-//    h1
-//      margin-top: 0
-//      font-family: variables.$serif
-//      font-size: 3em
-//
-//.projects
-//  background-color: color.scale(variables.$beige, $lightness: 30%)
-//.posts
-//  background-color: color.scale(variables.$beige, $lightness: 10%)
-//
-//
-//.about
-//  background-color: color.scale(variables.$beige, $lightness: 50%)
-//
-//  &-container
-//
-//    display: flex
-//    font-family: variables.$sans-serif
-//    gap: 3em
-//
-//    font-size: 1.4em
-//
-//    .summary
-//      flex-basis: 70%
-//      font-weight: 400
-//      line-height: 1.3
-//
-//      p
-//        margin: 0 0
-//
-//    .accounts
-//      font-weight: 600
-//
-//      flex-basis: 30%
-//      flex-direction: column
-//      display: flex
-//      justify-content: center
-//      align-items: left
-//
-//      span
-//        cursor: pointer
-//        display: flex
-//        flex-wrap: nowrap
-//        align-items: center
-//
-//        padding: 10px 0
-//
-//        svg
-//          padding-right: 10px
-//          font-size: 1.3em
-//          width: 1em
-//
-//
-//@media screen and (max-width: 1400px)
-//  .section
-//    &-inner
-//      width: min(80%, 80em)
-//
-//@media screen and (max-width: 1200px)
-//  .section
-//    &-inner
-//      width: min(90%, 80em)
-//
-//@media screen and (max-width: 600px)
-//  .title-screen
-//    .title
-//      hr
-//        width: 75%
-//  .section
-//    &-inner
-//      padding: 3em 0
-//      h1
-//        margin-bottom: 0.5em
-//
-//  .about
-//    &-container
-//      flex-direction: column-reverse
-//      gap: 1.3em
-//
-//
+@media screen and (max-width: 900px)
+  $coeff: 0.4
+  .main-flex
+    font-size: 0.88rem
+    .left-pane
+      padding-left: $page-margin * $coeff
+    .content
+      padding-right: $page-margin * $coeff
+    column-gap: 5ex
+
+@media screen and (max-width: 800px)
+  $coeff: 0.3
+  .main-flex
+    font-size: 0.88rem
+    .left-pane
+      padding-left: $page-margin * $coeff
+    .content
+      padding-right: $page-margin * $coeff
+    .About
+      min-width: 33%
+      .title-bar
+        h1
+          font-size: 5em
+    column-gap: 5ex
+
+@media screen and (max-width: 600px)
+  //.title-screen
+  //  .title
+  //    hr
+  //      width: 75%
+  //.section
+  //  &-inner
+  //    padding: 3em 0
+  //    h1
+  //      margin-bottom: 0.5em
+  //

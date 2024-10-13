@@ -1,3 +1,5 @@
+rackandpinion
+20xtbatterybox
 magrover
 nasaadc
 ftc2020-robot

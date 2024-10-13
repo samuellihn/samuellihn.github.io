@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/blurb.md",
+                "file": "projects/rackandpinion/rackandpinion.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home/blurb.md",
+                "file": "projects/rackandpinion/rackandpinion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "home/blurb.md",
+                "file": "projects/rackandpinion/rackandpinion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "home/blurb.md"
+                "file": "projects/rackandpinion/rackandpinion.md"
               }
             }
           }
@@ -148,6 +148,20 @@
   },
   "active": "c76b8895116dca00",
   "lastOpenFiles": [
+    "projects/20xtbatterybox/20xtbatterybox.md",
+    "projects/list.md",
+    "projects/focusmath/focusmath.md",
+    "projects/rackandpinion/rackandpinion.md",
+    "projects/rackandpinion/media/rackopen.png",
+    "projects/rackandpinion/media",
+    "projects/rackandpinion",
+    "projects/20xtbatterybox/media/boxcutaway.png",
+    "projects/20xtbatterybox/media/batterybox.png",
+    "projects/20xtbatterybox/media",
+    "projects/20xtbatterybox/Untitled.md",
+    "home/experience.md",
+    "projects/20xtbatterybox",
+    "home/blurb.md",
     "next-image-export-optimizer-hashes.json",
     "projects/nasaadc/media/nextImageExportOptimizer/Rover-Screenshot-opt-3840.WEBP",
     "projects/nasaadc/media/nextImageExportOptimizer/Rover-Screenshot-opt-2048.WEBP",
@@ -156,25 +170,14 @@
     "projects/nasaadc/media/nextImageExportOptimizer/Rover-Screenshot-opt-1080.WEBP",
     "projects/nasaadc/media/nextImageExportOptimizer/Rover-Screenshot-opt-828.WEBP",
     "projects/nasaadc/media/nextImageExportOptimizer/Rover-Screenshot-opt-750.WEBP",
-    "projects/nasaadc/media/nextImageExportOptimizer/Rover-Screenshot-opt-640.WEBP",
-    "projects/nasaadc/media/nextImageExportOptimizer/Rover-Screenshot-opt-384.WEBP",
-    "projects/nasaadc/media/nextImageExportOptimizer/Rover-Screenshot-opt-256.WEBP",
     "projects/nasaadc/media/nextImageExportOptimizer",
     "projects/mti2019-robot/media/nextImageExportOptimizer",
     "projects/magrover/media/nextImageExportOptimizer",
     "projects/localpin/media/nextImageExportOptimizer",
     "projects/ftc2020-robot/media/nextImageExportOptimizer",
-    "projects/ftc2018-robot/media/nextImageExportOptimizer",
-    "projects/ftc2018-linkage/media/nextImageExportOptimizer",
-    "projects/focusmath/media/nextImageExportOptimizer",
-    "CNAME~",
-    "home/blurb.md~",
-    "home/experience.md",
-    "home/blurb.md",
     "projects/magrover/magrover.md",
     "projects/localpin/localpin.md",
     "projects/ftc2018-linkage/media.md",
-    "projects/ftc2018-linkage/ftc2018-linkage.md",
-    "projects/focusmath/focusmath.md"
+    "projects/ftc2018-linkage/ftc2018-linkage.md"
   ]
 }

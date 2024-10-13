@@ -1,3 +1,0 @@
-I am a **Mechanical Engineering and Computer Engineering** sophomore at **The Johns Hopkins University**. I'm passionate about building robotics-based technologies and **integrating smarts** into traditional mechanical systems.
-
-Born and raised in Central Jersey, I grew up in a melting pot of unique places, subcultures, and experiences. I became interested in how different aspects of the world around me could be improved by **implementing technology at the edge.** This has inspired me to build an equally diverse set of skills and interests, from embedded programming to graphic design, and continue taking in all the experiences the world has to offer.
