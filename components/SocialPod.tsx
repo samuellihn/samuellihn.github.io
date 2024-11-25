@@ -17,6 +17,9 @@ const SocialPod: (props: {
         setHover(true)
 
         if (labelRef.current == undefined) return
+        if (getComputedStyle(labelRef.current).transitionProperty == "none") {
+            return
+        }
 
         let width = labelRef.current.scrollWidth
 
@@ -28,6 +31,9 @@ const SocialPod: (props: {
     const hoverOut = () => {
         setHover(false)
         if (labelRef.current == undefined) return
+        if (getComputedStyle(labelRef.current).transition == "none") {
+            return
+        }
 
         let width = labelRef.current.scrollWidth
 

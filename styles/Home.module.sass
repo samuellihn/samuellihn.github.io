@@ -21,6 +21,9 @@ $page-margin: 10em
         font-size: 6em
     .dynamic-panel-1
       height: 0
+    .social-container
+      min-height: 8em
+
 
   .Experience
     min-width: 33%
@@ -31,6 +34,8 @@ $page-margin: 10em
     .dynamic-panel-1
       height: calc(100vh - 25em)
       margin-bottom: 1.8em
+    .social-container * // Apply to all children
+      transition: none
 
   .Projects
     min-width: 33%
@@ -41,6 +46,8 @@ $page-margin: 10em
     .dynamic-panel-1
       height: 0
       margin-bottom: 0
+    .social-container * // Apply to all children
+      transition: none
 
   .left-pane
     display: flex
@@ -69,6 +76,8 @@ $page-margin: 10em
         justify-content: left
         row-gap: 0.8em
         column-gap: 0.8em
+        flex-flow: row wrap
+        overflow-x: clip
 
 
       .dynamic-panel-1
@@ -130,10 +139,6 @@ $page-margin: 10em
     gap: 1.6em
 
 
-@media screen and (max-width: 1400px)
-  //.section
-  //  &-inner
-  //    width: min(80%, 80em)
 
 @media screen and (max-width: 1200px)
   $coeff: 0.8
@@ -188,14 +193,30 @@ $page-margin: 10em
           font-size: 5em
     column-gap: 5ex
 
-@media screen and (max-width: 600px)
-  //.title-screen
-  //  .title
-  //    hr
-  //      width: 75%
-  //.section
-  //  &-inner
-  //    padding: 3em 0
-  //    h1
-  //      margin-bottom: 0.5em
-  //
+// Mobile-friendly
+@media screen and (max-width: 450px)
+  .main-flex
+    .dynamic-panel-1
+      display: none
+    flex-direction: column
+    .left-pane
+      display: flex
+      top: unset
+      position: unset
+      color: variables.$text-main
+      height: 100vh
+      .title-bar
+        h1
+          font-size: 6em
+
+    .content
+      display: flex
+      flex-direction: column
+      flex-grow: 1
+      padding-right: 2em
+      padding-left: 2em
+      .title-screen
+        font-size: 0.95em
+        height: unset
+      .experience
+        font-size: 1.15em

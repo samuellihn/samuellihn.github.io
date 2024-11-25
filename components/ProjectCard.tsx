@@ -51,7 +51,7 @@ const ProjectCard = (props: { project: Project }) => {
                             <div className={styles["window"]}></div>
                         </div>
                         <div className={styles["arrow"]}>
-                            <span>{">>"}</span>
+                        <span>{">>"}</span>
                         </div>
                     </div>
                 </div>
