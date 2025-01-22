@@ -17,7 +17,7 @@ const ProjectCard = (props: { project: Project }) => {
                     <div className={styles["image-layer"]}>
                         {props.project.images && props.project.images.length > 0 ? (
                             <div className={styles["right-pad"]}>
-                                <ExportedImage src={props.project.images[0]} alt={props.project.title + " image"}
+                                <ExportedImage src={props.project.thumbnail} alt={props.project.title + " image"}
                                                fill={true}
                                 />
                             </div>

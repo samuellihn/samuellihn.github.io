@@ -220,3 +220,31 @@ $page-margin: 10em
         height: unset
       .experience
         font-size: 1.15em
+
+// Mobile-friendly, narrow
+@media screen and (max-width: 350px)
+  .main-flex
+    .dynamic-panel-1
+      display: none
+    flex-direction: column
+    .left-pane
+      display: flex
+      top: unset
+      position: unset
+      color: variables.$text-main
+      height: 100vh
+      .title-bar
+        h1
+          font-size: 6em
+
+    .content
+      display: flex
+      flex-direction: column
+      flex-grow: 1
+      padding-right: 1.5em
+      padding-left: 1.5em
+      .title-screen
+        font-size: 0.95em
+        height: unset
+      .experience
+        font-size: 1.15em

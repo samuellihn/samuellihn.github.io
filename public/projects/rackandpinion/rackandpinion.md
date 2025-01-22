@@ -3,9 +3,15 @@ title: 21XT Rack and Pinion
 date: 2024-09-15
 status: In Progress
 thumbnail: rackopen.png
-images: 
-- rackopen.png
-description: 
+images:
+  - rackopen.png
+  - rackclosed.png
+  - racksystem.png
+  - rackmain.png
+  - rackansys.png
+  - tabansys.png
+  - rackopen-old.png
+description: Rack and pinion steering system created for JH21XT off-road Baja race car.
 ---
 
 This is a steering rack and pinion for the Hopkins Baja 2024-2025 race car, the JH21XT. It is designed to withstand the harsh conditions of off-road Baja racing while being as light as possible to reduce overall vehicle weight. Static structural analysis in ANSYS was used to identify areas where weight could be reduced in the 7075 aluminum rack casing. The load case considered the entire car landing a jump on one wheel, with the force of the landing being transferred through a tie rod and into the rack, while the rack is at maximum rotation. 

@@ -1,6 +1,11 @@
 {
     "projects/20xtbatterybox/media/batterybox.png": "vYdcsN1MJKNr+q5OGMxox+z1jJ0fHAlSa7Xb63jNNP8=",
     "projects/20xtbatterybox/media/boxcutaway.png": "LZLQArJfvG8HYs4tr6VZ2kHGhA7+SQCq9jpYKLY8CqY=",
+    "projects/21daqmech/media/accessory-section.png": "EMx5loMwlYfyOrCvhPZBpwZQxebaW2dU9JRCJNbKO38=",
+    "projects/21daqmech/media/accessory.png": "rk8eTsKU6EWeu0UUqwV9tjheW0GnF33f+VdlRVihl1A=",
+    "projects/21daqmech/media/main.png": "9WthSMtY0qmiqqmnc4V0efgj4KDVm9iaXYUanbDWMqc=",
+    "projects/21daqmech/media/mainthermal.png": "A5o8M+dQ6xMkrIy3hJ5rE0VIXVKZIKb4KkYUoarrluM=",
+    "projects/21daqmech/media/mainthermal2.png": "AuGJZWfXJqQYX93sW9273E7t2A7+9G08WK5m+CBe9Lc=",
     "projects/focusmath/media/capture-1.png": "S3ZUwDchKBQizcyrEJ3N-7pu+uL-tJ1PiCxK6as2bho=",
     "projects/focusmath/media/capture-2.png": "03LO-nrnHm9E73QvJBBrnFFdC+5cWp-SQJiHitNdUNo=",
     "projects/focusmath/media/check-1.png": "jrJqlpwhRvKPHTMvpDfH3bFHYQd8iXS3VpfWX+UAxjQ=",
@@ -52,5 +57,11 @@
     "projects/nasaadc/media/Rover-Driving-1.png": "wukoDSaJUX9HtCfr9xZWk3WK0zoHjIz9H8s+ScyLBhs=",
     "projects/nasaadc/media/Rover-Driving-2.png": "YQahFmTaGfCzAWSnE25OA4JzYlIVZGSqxFXXllE0DDk=",
     "projects/nasaadc/media/Rover-Screenshot.png": "ElIdvEFwU-RHoa70Koj1lDdPLDfWGFCN9TajiKBlBME=",
-    "projects/rackandpinion/media/rackopen.png": "jn0fS1WLippzWPKEHHfQAXfy5MMA043lD-OHhPuhOeQ="
+    "projects/rackandpinion/media/rackansys.png": "xk8FwZ3vk8pRrEdGBFlMrOZwfExh1xvLD4fgyP70css=",
+    "projects/rackandpinion/media/rackclosed.png": "RoRq-ykRVOj5UJN-eJdRoLQHB1aXqd+B-fA4hruV8Yc=",
+    "projects/rackandpinion/media/rackmain.png": "nFPlu13M1PCeDnY-y-zUBmztDVsseKSKV0e-iq9++tU=",
+    "projects/rackandpinion/media/rackopen-old.png": "q8CJ69lo+swVtsb2GiE2WJxRvB-LqJw7jy93lh-dwRI=",
+    "projects/rackandpinion/media/rackopen.png": "B7rn7siG5waIbREAa75XsHOxCnz680APPmV7wCEzOnk=",
+    "projects/rackandpinion/media/racksystem.png": "PBWGu2QG5B+mQYtn0hYOC9MyGnH5qjzt5F0nyAcqACw=",
+    "projects/rackandpinion/media/tabansys.png": "EHawUcQ8OxNKorbBta4G1KTKAhGM5RarmMq7vH8ZFTY="
 }
