@@ -137,8 +137,11 @@ const Home: ({blurb, experience, projects}: HomeContent) => JSX.Element = ({blur
                         <div className={styles["dynamic-panel-1"]}>
                             <h1>Education</h1>
                             <div className={styles["education"]}>
+                                @media screen and (max-width: 450px)
+                                .project-card
+                                height: 15em
                                 <Education inst={"Johns Hopkins University"}
-                                           major={"Mechanical Engineering & Computer Engineering"}
+                                           major={"Mechanical Engineering & Computer Science"}
                                            dates={"Class of 2027"}
                                            location={"Baltimore, MD"}/>
                                 <Education inst={"Edison Academy Magnet School"}
