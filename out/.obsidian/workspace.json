@@ -13,12 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/experience.md",
+                "file": "home/blurb.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "experience"
+              "title": "blurb"
+            }
+          },
+          {
+            "id": "ed1d400cdeaba051",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
             }
           }
         ]
@@ -163,10 +175,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "74a65f0289c2c6b5",
+  "active": "03dec879491fc731",
   "lastOpenFiles": [
-    "home/experience-old.md",
     "home/experience.md",
+    "home/experience-old.md",
     "home/blurb.md",
     "projects/rackandpinion/media/rackopen.png",
     "projects/rackandpinion/media/rackopen-old.png",

@@ -1,3 +1,5 @@
-I am a **Mechanical Engineering and Computer Engineering** sophomore at **The Johns Hopkins University**. I'm passionate about building robotics-based technologies and **integrating smarts** into traditional mechanical systems.
+**I am passionate about building technology that meaningfully benefits the physical world.** 
 
-Born and raised in Central Jersey, I grew up in a melting pot of unique places, subcultures, and experiences. I became interested in how different aspects of the world around me could be improved by **implementing technology at the edge.** This has inspired me to build an equally diverse set of skills and interests, from embedded programming to graphic design, and continue taking in all the experiences the world has to offer.
+My focus areas are in robotics and control systems, and I am currently studying **Mechanical Engineering and Robotics** at **The Johns Hopkins University**. My interests lie in deep tech startups that leverage modern technologies like AI to improve the world we interact with. I've had internships at Zoox, Amazon's robotaxi spinoff, and Fulfil, a grocery automation startup, both of whom are aligned with this mission.
+
+Born and raised in Central Jersey, I grew up in a melting pot of unique places, subcultures, and experiences, and became interested in how different aspects of the world around me could be improved by **implementing technology where it matters.** This has inspired me to build an equally diverse set of skills and interests, and continue taking in all the experiences the world has to offer.
