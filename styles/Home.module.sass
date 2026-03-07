@@ -194,7 +194,7 @@ $page-margin: 10em
     column-gap: 5ex
 
 // Mobile-friendly
-@media screen and (max-width: 450px)
+@media screen and (max-width: 850px)
   .main-flex
     .dynamic-panel-1
       display: none
@@ -204,10 +204,11 @@ $page-margin: 10em
       top: unset
       position: unset
       color: variables.$text-main
-      height: 100vh
+      height: unset
+      padding: 3em 2em 1em 2em
       .title-bar
         h1
-          font-size: 6em
+          font-size: 4em
 
     .content
       display: flex
@@ -232,10 +233,11 @@ $page-margin: 10em
       top: unset
       position: unset
       color: variables.$text-main
-      height: 100vh
+      height: unset
+      padding: 3em 1.5em 1em 1.5em
       .title-bar
         h1
-          font-size: 6em
+          font-size: 3em
 
     .content
       display: flex

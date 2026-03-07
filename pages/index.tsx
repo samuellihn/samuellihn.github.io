@@ -1,14 +1,14 @@
-import type {NextPage} from 'next'
+import type { NextPage } from 'next'
 
-import {promises as fs} from "fs"
+import { promises as fs } from "fs"
 import Head from 'next/head'
 import Image from 'next/image'
-import {MDXRemote, MDXRemoteSerializeResult} from "next-mdx-remote"
-import {serialize} from "next-mdx-remote/serialize"
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote"
+import { serialize } from "next-mdx-remote/serialize"
 import styles from '../styles/Home.module.sass'
 import FloatingNav from "../components/FloatingNav";
 import path from "path";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faGithub,
     faLinkedinIn
@@ -20,9 +20,9 @@ import {
     faChevronRight
 } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
-import {parseExperience, ExperienceEntry, getProjects, Project} from "../lib/contentFetcher";
+import { parseExperience, ExperienceEntry, getProjects, Project } from "../lib/contentFetcher";
 import SocialPod from "../components/SocialPod";
-import {useEffect, useRef, useState} from "react";
+import { useEffect, useRef, useState } from "react";
 import Experience from '../components/Experience'
 import Education from "../components/Education";
 import ProjectCard from "../components/ProjectCard";
@@ -67,7 +67,7 @@ export async function getStaticProps() {
 }
 
 
-const Home: ({blurb, experience, projects}: HomeContent) => JSX.Element = ({blurb, experience, projects}: HomeContent) => {
+const Home: ({ blurb, experience, projects }: HomeContent) => JSX.Element = ({ blurb, experience, projects }: HomeContent) => {
 
     const aboutRef = useRef(null)
     const experienceRef = useRef(null)
@@ -76,7 +76,7 @@ const Home: ({blurb, experience, projects}: HomeContent) => JSX.Element = ({blur
     const [curSection, setCurSection] = useState("About")
 
     const sectionSet = (section: string, href: string) => {
-        history.replaceState(null, "", location.origin + location.pathname + `#${href}` )
+        history.replaceState(null, "", location.origin + location.pathname + `#${href}`)
         setCurSection(section)
     }
 
@@ -105,21 +105,25 @@ const Home: ({blurb, experience, projects}: HomeContent) => JSX.Element = ({blur
         }
 
         const aboutObserver = new IntersectionObserver(
-            aboutCallback, {root: null, rootMargin: "0px", threshold: 1})
+            aboutCallback, { root: null, rootMargin: "0px", threshold: 1 })
         if (aboutRef.current) aboutObserver.observe(aboutRef.current)
 
         const experienceObserver = new IntersectionObserver(
-            experienceCallback, {root: null, rootMargin: "0px", threshold: 1})
+            experienceCallback, { root: null, rootMargin: "0px", threshold: 1 })
         if (experienceRef.current) experienceObserver.observe(experienceRef.current)
 
         const projectsObserver = new IntersectionObserver(
-            projectsCallback, {root: null, rootMargin: "0px", threshold: 1})
+            projectsCallback, { root: null, rootMargin: "0px", threshold: 1 })
         if (projectsRef.current) projectsObserver.observe(projectsRef.current)
+
+        return () => {
+            aboutObserver.disconnect()
+            experienceObserver.disconnect()
+            projectsObserver.disconnect()
+        }
 
     }, [aboutRef, experienceRef, projectsRef]);
 
-    // @ts-ignore
-    // @ts-ignore
     return (
         <div className={styles["main-page"]}>
             <Head>
@@ -130,51 +134,51 @@ const Home: ({blurb, experience, projects}: HomeContent) => JSX.Element = ({blur
                     <div className={styles["title-bar"]}>
                         <h1>Samuel Lihn</h1>
                         <FloatingNav entries={[
-                            {label: "About", href: "#about"},
-                            {label: "Experience", href: "#experience"},
-                            {label: "Projects", href: "#projects"},
-                        ]} selected={curSection}/>
+                            { label: "About", href: "#about" },
+                            { label: "Experience", href: "#experience" },
+                            { label: "Projects", href: "#projects" },
+                        ]} selected={curSection} />
                         <div className={styles["dynamic-panel-1"]}>
                             <h1>Education</h1>
                             <div className={styles["education"]}>
                                 <Education inst={"Johns Hopkins University"}
-                                           major={"Mechanical Engineering & Computer Science"}
-                                           dates={"Class of 2027"}
-                                           location={"Baltimore, MD"}/>
+                                    major={"Mechanical Engineering & Computer Science"}
+                                    dates={"Class of 2027"}
+                                    location={"Baltimore, MD"} />
                                 <Education inst={"Edison Academy Magnet School"}
-                                           major={"Electrical & Computer Engineering Technologies"}
-                                           dates={"Class of 2023"}
-                                           location={"Edison, NJ"}/>
+                                    major={"Electrical & Computer Engineering Technologies"}
+                                    dates={"Class of 2023"}
+                                    location={"Edison, NJ"} />
                             </div>
                         </div>
                         <div className={styles["social-container"]}>
                             <SocialPod icon={faLinkedinIn} name={"linkedin.com/in/samuellihn/"}
-                                       href={"https://www.linkedin.com/in/samuellihn/"}/>
+                                href={"https://www.linkedin.com/in/samuellihn/"} />
                             <SocialPod icon={faGithub} name={"github.com/samuellihn"}
-                                       href={"https://github.com/samuellihn"}/>
+                                href={"https://github.com/samuellihn"} />
                             <SocialPod icon={faEnvelope} name={"slihn1@jh.edu"} href={"mailto: slihn1@jh.edu"}
-                                       hoverIcon={faEnvelopeOpen}/>
+                                hoverIcon={faEnvelopeOpen} />
                         </div>
                     </div>
                 </div>
                 <div className={styles["content"]}>
                     <section id={"about"} ref={aboutRef} className={styles["title-screen"]}>
                         <div className={styles['blurb']}>
-                            <MDXRemote {...blurb}/>
+                            <MDXRemote {...blurb} />
                         </div>
 
                     </section>
                     <section id={"experience"} className={styles["experience"]}>
                         <h1 ref={experienceRef}>Experience</h1>
                         {experience.map((exp: ExperienceEntry) => (
-                            <Experience exp={exp} key={exp.title}/>
+                            <Experience exp={exp} key={exp.title} />
                         ))}
                     </section>
                     <section id={"projects"} className={styles["projects"]}>
                         <h1 ref={projectsRef}>Projects</h1>
                         <div className={styles["projects-container"]}>
                             {projects.map((p: Project) => (
-                                <ProjectCard project={p} key={p.slug}/>
+                                <ProjectCard project={p} key={p.slug} />
                             ))}
                         </div>
                     </section>
