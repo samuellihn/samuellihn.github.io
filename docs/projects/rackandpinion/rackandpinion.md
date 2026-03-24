@@ -4,6 +4,11 @@ date: 2024-09-15
 status: In Progress
 thumbnail: rackopen.png
 images:
+  - rack-postasm.jpg
+  - rack-integrated.jpg
+  - rackcases.jpg
+  - 21xt-clean.jpg
+  - 21xt-dirty.jpg
   - rackopen.png
   - rackclosed.png
   - racksystem.png

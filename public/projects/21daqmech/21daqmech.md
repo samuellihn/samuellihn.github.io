@@ -4,6 +4,10 @@ date: 2024-12-20
 status: In Progress
 thumbnail: accessory.png
 images:
+  - dyno-debug.jpg
+  - dyno-debug-me.jpg
+  - endcaps.jpg
+  - endcaps-premachine.jpg
   - accessory.png
   - accessory-section.png
   - main.png

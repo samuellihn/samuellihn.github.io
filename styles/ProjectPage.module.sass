@@ -9,9 +9,29 @@
 
   &-inner
 
-    padding: 4em 0
+    padding: 6em 0 4em 0
     width: min(70%, 80em)
     margin: 0 auto
+    position: relative
+
+    .backButton
+      position: absolute
+      top: 2em
+      left: 0
+      background: transparent
+      border: none
+      color: inherit
+      font-size: 1.5em
+      font-weight: 300
+      letter-spacing: -0.1em
+      font-family: variables.$sans-serif
+      cursor: pointer
+      padding: 0
+      transition: font-weight 0.2s, opacity 0.2s
+      
+      &:hover
+        font-weight: 600
+        opacity: 0.9
 
     h1
       margin-top: 0
@@ -42,6 +62,9 @@
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))
   width: 100%
   gap: 3em
+
+  @media screen and (max-width: 850px)
+    grid-template-columns: 1fr
 
   img
     border-radius: 8px
@@ -111,13 +134,96 @@
   .page
     &-inner
       width: 90%
-      padding: 3em 1em
+      padding: 5em 1em 3em 1em
+      
+      .backButton
+        top: 2em
+        left: 1em
       h1
         font-size: 3em
       h2
         font-size: 2em
       h3
         font-size: 1.3em
-      
-  .gallery
-    grid-template-columns: 1fr
+
+  .modalImageContainer
+    width: 100vw
+    height: 100vh
+
+  .navButton
+    position: absolute
+    top: auto
+    bottom: 5vh
+    transform: none
+    padding: 0 5vw
+    &:first-of-type
+      left: 10vw
+    &:last-of-type
+      right: 10vw
+
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background: rgba(0, 0, 0, 0.8)
+  z-index: 1000
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  backdrop-filter: blur(5px)
+
+.modalClose
+  position: absolute
+  top: 30px
+  right: 40px
+  color: white
+  font-size: 2em
+  font-weight: bold
+  cursor: pointer
+  z-index: 1001
+  font-family: variables.$sans-serif
+
+.modalContent
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100%
+
+.modalImageContainer
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 70vw
+  height: 80vh
+  cursor: zoom-in
+  transition: transform 0.3s ease
+
+  &.zoomed
+    transform: scale(1.5)
+    cursor: zoom-out
+
+.modalImage
+  width: 100%
+  height: 100%
+  object-fit: contain
+
+.navButton
+  background: transparent
+  border: none
+  color: white
+  font-size: 3em
+  font-weight: 250
+  letter-spacing: -0.31em
+  font-family: variables.$sans-serif
+  cursor: pointer
+  padding: 0 40px
+  z-index: 1001
+  transition: opacity 0.2s, font-weight 0.2s
+
+  &:hover
+    font-weight: 500
+    opacity: 0.9
