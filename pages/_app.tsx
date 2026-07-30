@@ -1,5 +1,5 @@
-import '../styles/globals.sass'
 import '../styles/normalize.css'
+import '../styles/globals.sass'
 
 import type {AppProps} from 'next/app'
 import Head from "next/head";

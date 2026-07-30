@@ -1,3 +1,10 @@
+# Robot Dynamics Simulation Engineer Intern
+## Zoox
+### May 2026 - Aug 2026
+
+- Built end-to-end vehicle dynamics model simulation pipeline to validate candidate changes to vehicle model and evaluate model fidelity.
+- Developed metrics to quantify vehicle simulation data similarity against vehicle test data, using cross-correlation and statistical divergence analysis
+- Deployed internal analysis tool for identifying model fidelity regressions and narrowing regressions to specific performance regimes.
 # Suspension Bench Test & Data Analysis Intern
 ## Zoox
 ### May 2025 - Aug 2025
@@ -14,6 +21,13 @@
 - Conducted initial bring-up, calibration, and troubleshooting to prepare machines for production use.
 - Performed root cause analysis of machinery failures through in-depth debugging of hardware and software systems and gathered data with various experiments to verify root causes.
 - Made recommendations for hardware subsystem revisions to reduce need for human intervention during operation and streamline hardware deployment for future sites.
+
+# Undergraduate Researcher
+## Autonomous Control and Exploration Lab
+### Aug 2025 - Present
+
+- Implemented generative sampling-based motion planning on MuJoCo-based 7-DOF satellite locomanipulation task and compared task completion and loop time to MPPI, CEM, and DIAL-MPC.
+- Trained diffusion policies with expert trajectory data to warm-start model predictive control loop for reduced planning latency.
 # Controls & DAQ Systems Integration Engineer
 ## Blue Jay Racing - Baja SAE at Johns Hopkins
 ### Aug 2023 - Jul 2025
@@ -24,7 +38,7 @@
 - Develop procedures for bench testing, on-vehicle validation, and calibration of data acquisition system electronics and suggest data- and process-driven improvements to various vehicle subsystems.
 # Strategic Advisor
 ## Pava Center for Entrepreneurship, Johns Hopkins University
-### Aug 2024 - present
+### Aug 2024 - Dec 2024
 #### Operations Intern (Aug 2023 - May 2024)
 
 - Facilitate weekly Mastermind Sessions to review venture development basics with idea-stage startup founders

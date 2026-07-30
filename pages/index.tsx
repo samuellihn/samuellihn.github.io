@@ -142,12 +142,16 @@ const Home: ({ blurb, experience, projects }: HomeContent) => JSX.Element = ({ b
                             <h1>Education</h1>
                             <div className={styles["education"]}>
                                 <Education inst={"Johns Hopkins University"}
-                                    major={"Mechanical Engineering & Computer Science"}
-                                    dates={"Class of 2027"}
+                                    major={"MSE, Robotics"}
+                                    dates={"2025 - 2027"}
+                                    location={"Baltimore, MD"} />
+                                <Education inst={"Johns Hopkins University"}
+                                    major={"BS, Mechanical Engineering"}
+                                    dates={"2023 - 2027"}
                                     location={"Baltimore, MD"} />
                                 <Education inst={"Edison Academy Magnet School"}
                                     major={"Electrical & Computer Engineering Technologies"}
-                                    dates={"Class of 2023"}
+                                    dates={"2019 - 2023"}
                                     location={"Edison, NJ"} />
                             </div>
                         </div>
