@@ -1,36 +1,24 @@
 {
   "main": {
-    "id": "55df9ad4734fc1d0",
+    "id": "98659d0e8b6dd471",
     "type": "split",
     "children": [
       {
-        "id": "65120f118dc154e9",
+        "id": "6b5fc3bcc8b671a3",
         "type": "tabs",
         "children": [
           {
-            "id": "a10bb92dc67688ae",
+            "id": "9978d23f2a17b10e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/list.md",
+                "file": "home/experience.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "list"
-            }
-          },
-          {
-            "id": "28151fcef264314f",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.4"
+              "title": "experience"
             }
           }
         ]
@@ -39,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "0e809942f537b7d1",
+    "id": "a02df73f4ac7c9e0",
     "type": "split",
     "children": [
       {
-        "id": "dbcba78f8bc9b831",
+        "id": "8ec92f1c2f3f5f06",
         "type": "tabs",
         "children": [
           {
-            "id": "03dec879491fc731",
+            "id": "46bdb557ea5e2a4e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -60,7 +48,7 @@
             }
           },
           {
-            "id": "48ecea3f48aa838d",
+            "id": "cadd751d32fe2d5c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -77,7 +65,7 @@
             }
           },
           {
-            "id": "16e91d8d6b6ea08a",
+            "id": "a7bda35b5bb3fa75",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -93,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "0e204288ee72e560",
+    "id": "af2f7b053da370a7",
     "type": "split",
     "children": [
       {
-        "id": "0227c17dac9c518b",
+        "id": "c0e4747aedd08997",
         "type": "tabs",
         "children": [
           {
-            "id": "53cd66ebd3dae307",
+            "id": "959bdca674918bac",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/rackandpinion/rackandpinion.md",
+                "file": "home/experience.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,46 +104,65 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for rackandpinion"
+              "title": "Backlinks for experience"
             }
           },
           {
-            "id": "487338ffc9fdffdb",
+            "id": "d3c3331fd0f5e6db",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/rackandpinion/rackandpinion.md",
+                "file": "home/experience.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from rackandpinion"
+              "title": "Outgoing links from experience"
             }
           },
           {
-            "id": "bc58a4a488da39b5",
+            "id": "afbb272fd5051042",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
             }
           },
           {
-            "id": "de98d2b574376793",
+            "id": "ffd10d602e7c50a7",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "fa00ddf3ae92441c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/rackandpinion/rackandpinion.md"
+                "file": "home/experience.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of rackandpinion"
+              "title": "Outline of experience"
             }
           }
         ]
@@ -167,51 +174,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
-  "active": "a10bb92dc67688ae",
+  "active": "9978d23f2a17b10e",
   "lastOpenFiles": [
-    "projects/21daqmech/21daqmech.md",
-    "projects/rackandpinion/rackandpinion.md",
-    "projects/rackandpinion/media/21xt-clean.jpg",
-    "projects/rackandpinion/media/rackcases.jpg",
-    "projects/list.md",
-    "projects/rackandpinion/media/rack-integrated.jpg",
-    "projects/rackandpinion/media/rack-postasm.jpg",
-    "projects/rackandpinion/media/rackopen-old.png",
-    "projects/21daqmech/media/endcaps-premachine.jpg",
-    "resume.pdf",
-    "th-demo-robot.jpg",
-    "projects/rackandpinion/media/tabansys.png",
-    "~ndcaps-premachine.tmp",
-    "endcaps-premachine.jpg.~tmp",
-    "projects/rackandpinion/media/21xt-dirty.jpg",
-    "projects/21daqmech/media/dyno-debug-me.jpg",
-    "~ndcaps.tmp",
-    "endcaps.jpg.~tmp",
-    "rackcases.jpg~RF1aa06d5f.TMP",
-    "~ackcases.tmp",
-    "rackcases.jpg.~tmp",
-    "Untitled.base",
     "home/blurb.md",
     "home/experience.md",
-    "home/experience-old.md",
-    "projects/20xtbatterybox/20xtbatterybox.md",
-    "projects/21daqmech/media/nextImageExportOptimizer",
-    "projects/21daqmech/rackandpinion.md",
-    "projects/rackandpinion - Copy/rackandpinion.md",
-    "projects/focusmath/focusmath.md",
-    "projects/20xtbatterybox/Untitled.md",
-    "projects/magrover/magrover.md",
-    "projects/localpin/localpin.md",
-    "projects/ftc2018-linkage/media.md",
-    "projects/ftc2018-linkage/ftc2018-linkage.md"
+    "th-demo-robot.jpg",
+    "Untitled.base"
   ]
 }
