@@ -27,13 +27,16 @@ export async function getProjects(): Promise<Project[]> {
 
         let images = mdFile.data?.images ? mdFile.data?.images.map((i: string) => `${PROJECT_DIR}${filename}/media/${i}`) : mdFile.data?.images
 
+        let carousel = parseCarousel(mdFile.data?.carousel, filename)
+
         let project: Project = {
             title: mdFile.data?.title ?? filename,
             description: mdFile.data?.description ?? null,
             slug: filename,
             content: await serialize(mdFile.content),
             thumbnail: thumbnail,
-            images: images ?? []
+            images: images ?? [],
+            carousel: carousel.length > 0 ? carousel : (thumbnail ? [{src: thumbnail}] : [])
         }
         projects.push(project)
     }
@@ -41,6 +44,24 @@ export async function getProjects(): Promise<Project[]> {
     return projects
 }
 
+
+// Carousel entries are either a bare filename or a {src, caption} pair.
+function parseCarousel(entries: (string | { src: string, caption?: string })[] | undefined, slug: string): MediaItem[] {
+    if (!entries) return []
+
+    return entries.map((entry) => {
+        let src = typeof entry === "string" ? entry : entry.src
+        let item: MediaItem = {src: `${PROJECT_DIR}${slug}/media/${src}`}
+        // getStaticProps cannot serialize undefined, so only set a caption when there is one
+        if (typeof entry !== "string" && entry.caption) item.caption = entry.caption
+        return item
+    })
+}
+
+export type MediaItem = {
+    src: string
+    caption?: string
+}
 
 export type Project = {
     title: string
@@ -50,6 +71,7 @@ export type Project = {
     date?: string
     thumbnail: string
     images?: string[]
+    carousel?: MediaItem[]
 }
 
 export type ExperienceEntry = {

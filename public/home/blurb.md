@@ -1,5 +1,5 @@
-**I am passionate about building technology that meaningfully benefits the physical world.** 
+**I build technology that meaningfully benefits the physical world.** I want to build robots that give people time back, make dangerous work safer, and extend human reach into space.
 
-My focus areas are in robotics and control systems, and I am currently studying **Mechanical Engineering and Robotics** at **The Johns Hopkins University**. My interests lie in deep tech startups that leverage automation to eliminate daily monotony, while actively making the world a safer and more sustainable place. I've had internships at Zoox, Amazon's autonomous vehicle subsidiary, and Fulfil, a grocery automation startup, both of which are aligned with this mission.
+I study Mechanical Engineering and Robotics at Johns Hopkins and have worked on robotic automation through internships at Zoox and Fulfil. My strength is breaking down problems, working through the math, and getting the solution running.
 
-**I enjoy making things work.** In my mind today, this manifests as a specialization in controls `:= "making robots do things."` At my core, I am a generalist, and am willing to tackle problems at all parts of the stack, from the system level down to the bare metal.
+I enjoy making things work. I specialize in controls := "making robots do things." and bring a generalist’s approach to tackling problems across the stack, from system design to bare metal.

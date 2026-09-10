@@ -14,7 +14,7 @@ images:
 - Rover-Screenshot.png
 - Rover-Driving-2.png
 
-description: A simulation for exploration and analysis of the lunar South Pole created for the 2021 NASA App Development Challenge
+description: Lunar South Pole exploration simulation for the 2021 NASA App Development Challenge.
 ---
 
 **In collaboration with: Uday Vidyadharan, Aarav Agarwal, Jason Liu, Aditya Dutt, Reva Amritkar**

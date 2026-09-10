@@ -1,0 +1,67 @@
+@use "../variables"
+
+.carousel
+  display: flex
+  flex-direction: column
+  gap: 0.7em
+
+.video
+  display: block
+  width: 100%
+  height: auto
+  border-radius: 8px
+  box-shadow: 0 0 10px -5px black
+  background-color: transparentize(black, 0.85)
+  object-fit: contain
+
+.caption
+  margin: 0
+  font-family: variables.$sans-serif
+  font-weight: 400
+  font-size: 1.05em
+  line-height: 1.35
+  color: variables.$text-muted
+
+.controls
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: 1em
+
+  button
+    background: transparent
+    border: none
+    color: inherit
+    cursor: pointer
+    padding: 0
+    font-family: variables.$sans-serif
+    font-size: 1.4em
+    font-weight: 300
+    letter-spacing: -0.1em
+    transition: font-weight 0.2s, opacity 0.2s
+
+    &:hover
+      font-weight: 600
+      opacity: 0.9
+
+.dots
+  display: flex
+  align-items: center
+  gap: 0.6em
+
+  button
+    width: 9px
+    height: 9px
+    padding: 0
+    border-radius: 50%
+    border: 1px solid currentColor
+    background: transparent
+    opacity: 0.45
+    transition: opacity 0.2s, background-color 0.2s
+
+    &:hover
+      opacity: 0.8
+
+  .active
+    background-color: currentColor
+    opacity: 1

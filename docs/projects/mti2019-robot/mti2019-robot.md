@@ -10,7 +10,7 @@ images:
 - ScoreLiftMirSlides.png
 - Shifter.png
 
-description: Rebuild of the FIRST Tech Challenge 2019-2020 "Rover Ruckus" season robot for the 2020 Maryland Tech Invitational competition.
+description: Off-season rebuild of the 2019 FTC rover for the Maryland Tech Invitational.
 ---
 
 I rebuilt the intake system once again to further reduce the torque required to lift the collector, as intake actuation was still slow on the previous revision. 

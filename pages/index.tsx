@@ -13,12 +13,6 @@ import {
     faGithub,
     faLinkedinIn
 } from '@fortawesome/free-brands-svg-icons'
-import {
-    faEnvelope,
-    faEnvelopeOpen,
-    faMapLocationDot,
-    faChevronRight
-} from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 import { parseExperience, ExperienceEntry, getProjects, Project } from "../lib/contentFetcher";
 import SocialPod from "../components/SocialPod";
@@ -35,7 +29,7 @@ const options = {
     },
 };
 
-const SELECTED_WORK = ["satellitegpc"]
+const SELECTED_WORK = ["satellitegpc", "nmpctraffic"]
 
 type HomeContent = {
     blurb: MDXRemoteSerializeResult
@@ -191,8 +185,6 @@ const Home: ({ blurb, experience, projects }: HomeContent) => JSX.Element = ({ b
                                 href={"https://www.linkedin.com/in/samuellihn/"} />
                             <SocialPod icon={faGithub} name={"github.com/samuellihn"}
                                 href={"https://github.com/samuellihn"} />
-                            <SocialPod icon={faEnvelope} name={"slihn1@jh.edu"} href={"mailto: slihn1@jh.edu"}
-                                hoverIcon={faEnvelopeOpen} />
                         </div>
                     </div>
                 </div>

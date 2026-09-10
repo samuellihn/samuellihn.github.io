@@ -61,6 +61,9 @@
     "projects/nasaadc/media/Rover-Driving-1.png": "wukoDSaJUX9HtCfr9xZWk3WK0zoHjIz9H8s+ScyLBhs=",
     "projects/nasaadc/media/Rover-Driving-2.png": "YQahFmTaGfCzAWSnE25OA4JzYlIVZGSqxFXXllE0DDk=",
     "projects/nasaadc/media/Rover-Screenshot.png": "ElIdvEFwU-RHoa70Koj1lDdPLDfWGFCN9TajiKBlBME=",
+    "projects/nmpctraffic/media/feasible-plan.png": "tzpDugsRnxsy6NaqYN8Wo+XN7gCuoXCtMduyEeEK2ts=",
+    "projects/nmpctraffic/media/global-path.png": "USCmvQdwMKdl2dTX-HXdT+O+qZxtcCjcIpOYAXQkJbQ=",
+    "projects/nmpctraffic/media/warmstart-failure.png": "2+xQPJ+gY3BFZu4UIdgE8hR7gHiZSQE23cDZyU29cU0=",
     "projects/rackandpinion/media/21xt-clean.jpg": "KolNgjr1gMbrnlK8f-yzXcu8metH9ZrjdYqpxJC71Ow=",
     "projects/rackandpinion/media/21xt-dirty.jpg": "SMlIdLml4WfgS4pQa6Usi7RIqIRnoOyAt5ikVxVdUZU=",
     "projects/rackandpinion/media/rack-integrated.jpg": "rWoTlPWBmqgvPV3HtK2DkuKS1kCnq5lriHIrpKm4qA8=",
@@ -73,5 +76,9 @@
     "projects/rackandpinion/media/rackopen.png": "B7rn7siG5waIbREAa75XsHOxCnz680APPmV7wCEzOnk=",
     "projects/rackandpinion/media/racksystem.png": "PBWGu2QG5B+mQYtn0hYOC9MyGnH5qjzt5F0nyAcqACw=",
     "projects/rackandpinion/media/tabansys.png": "EHawUcQ8OxNKorbBta4G1KTKAhGM5RarmMq7vH8ZFTY=",
+    "projects/satellitegpc/media/approach-phase.png": "HQdTlSTiAwjlKvH26BM3tmxaybVwWFrnuk3lOZ0MoE4=",
+    "projects/satellitegpc/media/grasped-phase.png": "yQj4cVlsOezJGrzazJf8KjjofRqCNu6A08p6ZVciiDA=",
+    "projects/satellitegpc/media/results-latency.png": "w1Ul6I4oltujPyuhIAKGJJfc4R22PaJaLpDDMYZN8zU=",
+    "projects/satellitegpc/media/results-success.png": "FmA2uy3U-RpVow5iS-mD3jrvoPXZ369LkrHzcMPPynQ=",
     "/th-demo-robot.jpg": "bttxtTPpo7vSXpo2do1r1yQIoewSDOAaXPYDnxG28Zo="
 }

@@ -9,7 +9,7 @@ images:
 - Rover-FrontLeft-1.png
 - Rover-Lift-1.png
 - Render-Lifted.png
-description:  A prototype rover made to validate techniques for rover-based Crustal Magnetic Field Measurement, created in collaboration with Dr. Peter Chi at UCLA.
+description: Prototype rover for crustal magnetic field measurement, in collaboration with UCLA.
 ---
 
 This project aims to develop techniques for crustal magnetic field measurement on the Moon and Mars using land-based rovers. Although past missions have carried magnetometers, the quality of the measurements cannot truly be used to construct the crustal magnetic field of a planet, as a single magnetometer is susceptible to interference from the rover's own components. 

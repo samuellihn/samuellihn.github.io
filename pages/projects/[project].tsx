@@ -2,6 +2,7 @@ import { MDXRemote } from "next-mdx-remote";
 import { getProjects, Project } from "../../lib/contentFetcher";
 import styles from "../../styles/ProjectPage.module.sass"
 import BlurImage from "../../components/BlurImage";
+import MediaCarousel from "../../components/MediaCarousel";
 import Head from "next/head";
 import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/router";
@@ -121,7 +122,7 @@ const ProjectPage = ({ project }: { project: Project }) => {
                         </div>
                     </div>
                     <div className={styles["side"]}>
-                        <BlurImage src={project.thumbnail ?? ""} maxHeight={"60ex"} />
+                        <MediaCarousel items={project.carousel ?? []} maxHeight={"60ex"} />
                     </div>
                 </div>
                 {
