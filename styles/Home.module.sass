@@ -32,12 +32,12 @@ $page-margin: 10em
       h1
         font-size: 4em
     .dynamic-panel-1
-      height: calc(100vh - 25em)
+      height: calc(100vh - 31em)
       margin-bottom: 1.8em
     .social-container * // Apply to all children
       transition: none
 
-  .Projects
+  .Work, .Projects
     min-width: 33%
 
     .title-bar
@@ -68,6 +68,50 @@ $page-margin: 10em
         margin: 0 0 -0.15em 0
         font-weight: 600
         transition: font-size $sidebar-trans
+
+      .specialty
+        font-family: variables.$sans-serif
+        font-size: 1.2em
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.05ex
+        margin: 0.75em 0 0 0
+
+      .affiliation
+        font-family: variables.$sans-serif
+        font-size: 1em
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.05ex
+        color: variables.$text-muted
+        margin: 0.5em 0 0 0
+
+      .quick-links
+        display: flex
+        flex-flow: row wrap
+        column-gap: 2em
+        row-gap: 0.4em
+        margin-top: 1.1em
+        font-family: variables.$sans-serif
+        font-size: 1.1em
+        text-transform: uppercase
+
+        a
+          display: inline-flex
+          align-items: center
+          column-gap: 0.7ex
+          font-weight: 500
+          letter-spacing: 0.05ex
+
+          .arrow
+            font-size: 0.9em
+            transition: transform 0.3s ease
+
+          &:hover
+            text-decoration: underline
+
+            .arrow
+              transform: translate(0.15em, -0.15em)
 
 
       .social-container
@@ -115,6 +159,15 @@ $page-margin: 10em
     flex-direction: column
     font-size: 1.5em
     line-height: 1.25
+
+.selected-work
+  padding-bottom: 4em
+  background-color: variables.$background-main
+  > h1
+    font-family: variables.$sans-serif
+    font-size: 3em
+    font-weight: 300
+    text-transform: uppercase
 
 .experience
   min-height: 90vh

@@ -7,7 +7,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FloatingNav: (props: {
-    entries: { href: string, label: string }[],
+    entries: { href: string, label: string, section?: string }[],
     selected: string
 }) => JSX.Element = (props) => {
     return (
@@ -15,7 +15,7 @@ const FloatingNav: (props: {
             <ul>
                 {props.entries.map(e => (
                     <li key={e.label}>
-                        <Link href={e.href} className={e.label === props.selected ? `${styles["nav-entry"]} ${styles["selected"]}` : styles["nav-entry"]}>
+                        <Link href={e.href} className={(e.section ?? e.label) === props.selected ? `${styles["nav-entry"]} ${styles["selected"]}` : styles["nav-entry"]}>
                             <span className={styles["bullet"]}>
                                 {">>>>"}
                             </span>

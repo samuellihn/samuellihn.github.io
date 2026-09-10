@@ -35,6 +35,8 @@ const options = {
     },
 };
 
+const SELECTED_WORK = ["satellitegpc"]
+
 type HomeContent = {
     blurb: MDXRemoteSerializeResult
     experience: ExperienceEntry[]
@@ -70,10 +72,15 @@ export async function getStaticProps() {
 const Home: ({ blurb, experience, projects }: HomeContent) => JSX.Element = ({ blurb, experience, projects }: HomeContent) => {
 
     const aboutRef = useRef(null)
+    const workRef = useRef(null)
     const experienceRef = useRef(null)
     const projectsRef = useRef(null)
 
     const [curSection, setCurSection] = useState("About")
+
+    const selectedWork = SELECTED_WORK
+        .map((slug: string) => projects.find((p: Project) => p.slug === slug))
+        .filter((p): p is Project => p !== undefined)
 
     const sectionSet = (section: string, href: string) => {
         history.replaceState(null, "", location.origin + location.pathname + `#${href}`)
@@ -90,6 +97,12 @@ const Home: ({ blurb, experience, projects }: HomeContent) => JSX.Element = ({ b
                 sectionSet("About", "about")
             }
 
+        }
+        const workCallback = (entries: IntersectionObserverEntry[]) => {
+            const [entry] = entries
+            if (entry.isIntersecting) {
+                sectionSet("Work", "work")
+            }
         }
         const experienceCallback = (entries: IntersectionObserverEntry[]) => {
             const [entry] = entries
@@ -108,6 +121,10 @@ const Home: ({ blurb, experience, projects }: HomeContent) => JSX.Element = ({ b
             aboutCallback, { root: null, rootMargin: "0px", threshold: 1 })
         if (aboutRef.current) aboutObserver.observe(aboutRef.current)
 
+        const workObserver = new IntersectionObserver(
+            workCallback, { root: null, rootMargin: "0px", threshold: 1 })
+        if (workRef.current) workObserver.observe(workRef.current)
+
         const experienceObserver = new IntersectionObserver(
             experienceCallback, { root: null, rootMargin: "0px", threshold: 1 })
         if (experienceRef.current) experienceObserver.observe(experienceRef.current)
@@ -118,11 +135,12 @@ const Home: ({ blurb, experience, projects }: HomeContent) => JSX.Element = ({ b
 
         return () => {
             aboutObserver.disconnect()
+            workObserver.disconnect()
             experienceObserver.disconnect()
             projectsObserver.disconnect()
         }
 
-    }, [aboutRef, experienceRef, projectsRef]);
+    }, [aboutRef, workRef, experienceRef, projectsRef]);
 
     return (
         <div className={styles["main-page"]}>
@@ -133,8 +151,21 @@ const Home: ({ blurb, experience, projects }: HomeContent) => JSX.Element = ({ b
                 <div className={`${styles["left-pane"]} ${styles[curSection]}`}>
                     <div className={styles["title-bar"]}>
                         <h1>Samuel Lihn</h1>
+                        <p className={styles["specialty"]}>Robotics · Learning · Control</p>
+                        <p className={styles["affiliation"]}>Johns Hopkins · Robotics MSE · May 2027</p>
+                        <div className={styles["quick-links"]}>
+                            <Link href={"/resume.pdf"} target={"_blank"}>
+                                <span>Résumé</span>
+                                <span className={styles["arrow"]}>↗</span>
+                            </Link>
+                            <Link href={"mailto:slihn1@jh.edu"}>
+                                <span>Email</span>
+                                <span className={styles["arrow"]}>↗</span>
+                            </Link>
+                        </div>
                         <FloatingNav entries={[
                             { label: "About", href: "#about" },
+                            { label: "Selected Work", href: "#work", section: "Work" },
                             { label: "Experience", href: "#experience" },
                             { label: "Projects", href: "#projects" },
                         ]} selected={curSection} />
@@ -171,6 +202,14 @@ const Home: ({ blurb, experience, projects }: HomeContent) => JSX.Element = ({ b
                             <MDXRemote {...blurb} />
                         </div>
 
+                    </section>
+                    <section id={"work"} className={styles["selected-work"]}>
+                        <h1 ref={workRef}>Selected Work</h1>
+                        <div className={styles["projects-container"]}>
+                            {selectedWork.map((p: Project) => (
+                                <ProjectCard project={p} key={p.slug} />
+                            ))}
+                        </div>
                     </section>
                     <section id={"experience"} className={styles["experience"]}>
                         <h1 ref={experienceRef}>Experience</h1>
